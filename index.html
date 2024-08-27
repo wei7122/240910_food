@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  
+
+  <style>
+
+    /* == 影片 == */
+    .video__wrap {
+      position: relative;
+      z-index: 2;
+    }
+
+    /*-- 手機版  --*/
+    .video__wrap .video__obj--01 {
+      position: absolute;
+      top: 2vw;
+      left: 2vw;
+      width: 96%;
+      height: 54vw;
+    }
+
+    /*-- 電腦版 --*/
+    @media screen and (min-width: 960px) {
+      .video__wrap .video__obj--01 {
+        top: 10px;
+        left: calc(50% - 467px);
+        width: 933px;
+        height: 523px;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="navRightBar" id="navRightBar"></div>
+  <div class="elevatorHome js--main--dialog" id="elevatorHome"></div>
+  <div id="barHome"></div>
+  <div class="home--icon layout--main" id="iconHome"></div>
+
+
+  <div class="sp__wrap" id="spWrap">
+
+
+
+    <!-- 影片 -->
+    <div class="video__wrap">
+      <iframe class="video__obj--01" width="560" height="315"
+        src="https://www.youtube.com/embed/XkHtdRY-qeg?si=ayUM6JJsWFFo-Ibe" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+
+
+    <!-- 版頭主視覺 -->
+    <main class="sp__main">
+      <section class="sp__visual">
+        <div class="layout--main">
+          <ul class="visual--auto clearfix">
+            <li class="visual__fragment width--auto"><img src="index_23.png" alt=""></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+
+
+  
+
+
+
+
+
+
+
+</body>
+
+</html>
